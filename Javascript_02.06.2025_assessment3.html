@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Javascript- 02.06.2025-Assessment3</title>
+</head>
+<body>
+  <div id="answer"></div>
+  <script>
+    window.onload = () => {
+      const message = prompt("enter the text to repeat:");
+      const countInput = prompt("How much times to repeat:");
+      const count = parseInt(countInput);
+      if (!message || isNaN(count) || count<=0) {
+        document.getElementById("answer").innerText="Invalid Input";
+        return;
+      }
+      let displayText = "";
+      for (let index = 1; index <= count; index++) {
+        displayText += `${index}. ${message}<br>`;
+      }
+
+      document.getElementById("answer").innerHTML = displayText;
+    };
+  </script>
+</body>
+</html>
