@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Javascript- 02.06.2025-Assessment1</title>
+    <meta charset="UTF-8" />
+</head>
+<body>
+    <p id="result"></p>
+    <script>
+    window.onload = function() {
+        let input = prompt("Enter a number:");
+
+        if (input>0){
+            document.getElementById("result").innerText=input+" is positive."
+        }else if(input<0){
+            document.getElementById("result").innerText=input+" is negative."
+        }else if(input==0){
+            document.getElementById("result").innerText=input+" is zero."
+        }else{
+            document.getElementById("result").innerText="Enter a valid number."
+        }
+    };
+    </script>
+</body>
+</html>
